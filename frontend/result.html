@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PROSHORT 단축 결과</title>
+</head>
+<body>
+    {% if msg == 'kiki' %}
+    <script>
+        alert('성공적으로 등록했습니다')
+        location.href = 'short/{{ name }}'
+    </script>
+    {% else %}
+    <script>
+        alert('{{ msg }}')
+        history.go(-1)
+    </script>
+    {% endif %}
+</body>
+</html>
